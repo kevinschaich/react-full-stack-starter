@@ -1,6 +1,6 @@
 # React Full-Stack Starter Kit
 
-Full-stack React boilerplate using [`create-react-app`](https://github.com/facebookincubator/create-react-app), [Babel](https://babeljs.io/), [Node.js](https://nodejs.org/en/), and [`express`](https://expressjs.com/). Plays nicely with DB connectors such as [MongoDB](https://www.npmjs.com/package/mongodb), [Mongoose](https://www.npmjs.com/package/mongoose), [MySQL](https://www.npmjs.com/package/mysql) and many others.
+Full-stack React boilerplate using [`create-react-app`](https://github.com/facebookincubator/create-react-app), [Babel](https://babeljs.io/), [Node.js](https://nodejs.org/en/), and [express](https://expressjs.com/). Plays nicely with DB connectors such as [MongoDB](https://www.npmjs.com/package/mongodb), [Mongoose](https://www.npmjs.com/package/mongoose), [MySQL](https://www.npmjs.com/package/mysql) and many others.
 
 Fully-updated for ES6 syntax.
 
