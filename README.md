@@ -60,8 +60,8 @@ For example, if your stored objects in Mongo look like the following:
 
 ```json
 [
-  {name: `Person1`, age: 38},
-  {name: `Person2`, age: 27},
+  {name: 'Person1', age: 38},
+  {name: 'Person2', age: 27}
 ]
 ```
 
