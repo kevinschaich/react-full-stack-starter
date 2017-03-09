@@ -22,11 +22,7 @@ npm start
 
 # Example DB Connection with MongoDB
 
-[Install MongoDB](https://docs.mongodb.com/manual/installation/) if you haven't already. Mac users can run the following:
-
-`brew install mongodb`
-
-Run the following in the root directory of the repository:
+Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). Run the following in the root directory of the repository:
 
 `npm install --save mongodb`
 
