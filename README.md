@@ -8,8 +8,6 @@ Loosely Based on [Fullstack React's demo](https://github.com/fullstackreact/food
 
 # Installation/Usage
 
-**Note for Windows Users:** I recommend giving [CMDer](http://cmder.net/) a try (trust me).
-
 **Run the following in your terminal:**
 
 ```bash
@@ -25,6 +23,8 @@ npm start
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser to see the server running!
+
+**Note for Windows Users:** If you encounter errors during installation, I recommend giving [CMDer](http://cmder.net/) a try.
 
 # Example DB Connection with MongoDB
 
