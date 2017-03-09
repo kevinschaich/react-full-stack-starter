@@ -8,6 +8,8 @@ Loosely Based on [Fullstack React's demo](https://github.com/fullstackreact/food
 
 # Installation/Usage
 
+**Note for Windows Users:**
+
 ```bash
 git clone https://github.com/kevinschaich/react-full-stack-starter
 cd react-full-stack-starter
@@ -42,6 +44,7 @@ In the top of `server.js`, add the following lines to import Mongo and set the d
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017/database-name-here';
 ```
+#### Retrieve objects from DB
 
 Now, near the bottom of `server.js`, update the `app.get('/api'...)` route to retrieve data from your DB. Be sure to replace `collection-name-here` with the name of your collection in Mongo.
 
@@ -62,6 +65,8 @@ app.get('/api', (req, res) => {
 ```
 
 Your server should be pulling items from the database when it receives a call to `/api`. You can test this by visiting [http://localhost:3001/api](http://localhost:3001/api) and see if the response is displayed properly.
+
+#### Update Client Code
 
 Back on the client side, in `client/src/App.js`, you need to update your `render` method to match the format of objects in MongoDB. For example, if your stored objects in Mongo look like the following:
 
