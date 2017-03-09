@@ -9,7 +9,7 @@ Loosely Based on [Fullstack React's demo](https://github.com/fullstackreact/food
 # Installation/Usage
 
 ```bash
-https://github.com/kevinschaich/react-full-stack-starter
+git clone https://github.com/kevinschaich/react-full-stack-starter
 cd react-full-stack-starter
 npm install
 
@@ -21,6 +21,10 @@ npm start
 ```
 
 # Example DB Connection with MongoDB
+
+[Install MongoDB] if you haven't already. Mac users can run the following:
+
+`brew install mongodb`
 
 Run the following in the root directory of the repository:
 
