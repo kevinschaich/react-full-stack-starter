@@ -24,9 +24,17 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to see the 
 
 # Example DB Connection with MongoDB
 
-Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). Run the following in the **root directory** of the repository:
+#### Install MongoDB
+
+Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). If you don't have any databases set up, you can run this command to populate a few rows (be sure to change `database-name-here` and `collection-name-here`):
+
+`mongo database-name-here --eval 'db.collection-name-here.insert({"name": "John Doe"}, {"name": "Jane Doe"})'`
+
+Run the following in the **root directory** of the repository:
 
 `npm install --save mongodb`
+
+#### Configure MongoDB
 
 In the top of `server.js`, add the following lines to import Mongo and set the database URI. Be sure to replace `database-name-here` with the name of your database in Mongo.
 
