@@ -56,8 +56,8 @@ app.get('/api', (req, res) => {
 
 In `client/src/App.js`, update line 17 to contain a field name of top-level items in your MongoDB database:
 
-```
-<h1 key={i}>{item.your-field-name-here}</h1>
+```jsx
+{this.state.items.map((item, i) => (<h1 key={i}>{item.your-field-name-here}</h1>))}
 ```
 
 Run the server using `npm start` -- you should see items from your DB being populated on the page!
