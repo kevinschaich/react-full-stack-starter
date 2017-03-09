@@ -60,7 +60,7 @@ In `client/src/App.js`, update line 17 to contain a field name of top-level item
 <h1 key={i}>{item.your-field-name-here}</h1>
 ```
 
-You should now see items from your DB being populated on the page!
+Run the server using `npm start` -- you should see items from your DB being populated on the page!
 
 # Contributing/Pull Requests
 
