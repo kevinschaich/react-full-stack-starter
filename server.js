@@ -18,6 +18,4 @@ app.get('/api', (req, res) => {
   ]);
 });
 
-app.listen(app.get('port'), () => {
-  console.log(`Find the server at: http://localhost:${app.get('port')}/`);
-});
+app.listen(app.get('port'));
