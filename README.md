@@ -37,7 +37,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017/database-name-here';
 ```
 
-Near the bottom of `server.js`, modify the `/api` route to return data dynamically from your DB:
+Near the bottom of `server.js`, modify the `/api` route to return data from your DB:
 
 ```javascript
 app.get('/api', (req, res) => {
@@ -54,21 +54,23 @@ app.get('/api', (req, res) => {
 
 ```
 
-In `client/src/App.js`, update your render method with the field names of top-level items in your MongoDB database.
+In `client/src/App.js`, update items in your `render` method to match the field names of objects in MongoDB.
 
 For example, if your stored objects in Mongo look like the following:
 
 ```json
 [
   {"name": "Person1", "age": 38},
-  {"name": "Person2", "age": 27}
+  {"name": "Person2", "age": 27},
 ]
 ```
 
-You would change the mapping to:
+You could change the mapping to:
 
 ```jsx
-{this.state.items.map((item, i) => (<h1 key={i}>{item.your-field-name-here}</h1>))}
+  const items = this.state.items.map(
+    (item, i) => (<h1 key={i}>{item.name}</h1>)
+  );
 ```
 
 Run the server using `npm start` -- you should see items from your DB being populated on the page!
