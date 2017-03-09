@@ -26,9 +26,9 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to see the 
 
 #### Install MongoDB
 
-Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). If you don't have any databases set up, you can run this command to populate a few rows (be sure to change `database-name-here` and `collection-name-here`):
+Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). If you don't have any databases set up, you can run this command to populate a few rows (be sure to change `db-name` and `collection-name`):
 
-`mongo database-name-here --eval 'db.collection-name-here.insert({"name": "John Doe"}, {"name": "Jane Doe"})'`
+`mongo db-name --eval 'db.collection-name.insert({"name": "John Doe"}, {"name": "Jane Doe"})'`
 
 Run the following in the **root directory** of the repository:
 
