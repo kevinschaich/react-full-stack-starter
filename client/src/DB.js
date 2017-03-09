@@ -1,12 +1,8 @@
-search = (query, cb) => {
-  return fetch('api', {
-    accept: 'application/json',
-  }).then(checkStatus)
-    .then(parseJSON)
-    .then(cb);
+const parseJSON = (response) => {
+  return response.json();
 }
 
-checkStatus = (response) => {
+const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
@@ -17,8 +13,12 @@ checkStatus = (response) => {
   throw error;
 }
 
-parseJSON = (response) => {
-  return response.json();
+const search = (query, cb) => {
+  return fetch('api', {
+    accept: 'application/json',
+  }).then(checkStatus)
+    .then(parseJSON)
+    .then(cb);
 }
 
 const DB = { search };
