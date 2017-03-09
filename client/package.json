@@ -1,0 +1,20 @@
+{
+  "name": "react-full-stack-starter-client",
+  "version": "0.0.1",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "devDependencies": {
+    "react-addons-test-utils": "15.4.0",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "react": "15.4.0",
+    "react-dom": "15.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

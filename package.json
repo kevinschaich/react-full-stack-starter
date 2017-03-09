@@ -1,0 +1,25 @@
+{
+  "name": "react-full-stack-starter-server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "6.14.0",
+    "babel-core": "6.14.0",
+    "express": "4.13.3"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd client && npm start\"",
+    "server": "babel-watch server.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "babel-watch": "^2.0.6",
+    "concurrently": "3.1.0",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.9.0"
+  }
+}
