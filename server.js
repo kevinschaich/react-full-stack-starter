@@ -12,7 +12,10 @@ if (process.env.NODE_ENV === 'production') {
 
 app.get('/api', (req, res) => {
   // Place code to fetch items from DB here
-  res.json([{ name: 'item1' }, { name: 'item2' }]);
+  res.json([
+    {name: 'Person1', age: 38},
+    {name: 'Person2', age: 27},
+  ]);
 });
 
 app.listen(app.get('port'), () => {
