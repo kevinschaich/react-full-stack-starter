@@ -54,7 +54,7 @@ app.get('/api', (req, res) => {
 
 ```
 
-In `client/src/App.js`, update items in your `render` method to match the field names of objects in MongoDB.
+Now, your server should be pulling in items from the database when it receives a call to `/api`. Now, in `client/src/App.js`, you need to update your `render` method to match the format of objects in MongoDB.
 
 For example, if your stored objects in Mongo look like the following:
 
@@ -65,7 +65,7 @@ For example, if your stored objects in Mongo look like the following:
 ]
 ```
 
-You could change the mapping to:
+You could change the mapping to populate the `name` field of each item on the page like so:
 
 ```jsx
   const items = this.state.items.map(
