@@ -37,17 +37,18 @@ Near the bottom of `server.js`, modify the `/api` route to return data from your
 
 ```javascript
 app.get('/api', (req, res) => {
-  return new Promise((res, rej) => {
-    MongoClient.connect(url).then(db => {
-      const cursor = db.collection('collection-name-here').findOne();
-      
-      res(cursor);
-    }).catch(err => {
-      console.log(err);
+  MongoClient.connect(url).then(db => {
+    const cursor = db.collection('collection-name-here')
+      .find({})
+      .limit(5)
+      .toArray()
+    .then((data) => {
+      res.json(data);
     });
+  }).catch(err => {
+    console.log(err);
   });
 });
-
 ```
 
 Now, your server should be pulling in items from the database when it receives a call to `/api`. Now, in `client/src/App.js`, you need to update your `render` method to match the format of objects in MongoDB.
