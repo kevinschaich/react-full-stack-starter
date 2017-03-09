@@ -54,7 +54,18 @@ app.get('/api', (req, res) => {
 
 ```
 
-In `client/src/App.js`, update line 17 to contain a field name of top-level items in your MongoDB database:
+In `client/src/App.js`, update your render method with the field names of top-level items in your MongoDB database.
+
+For example, if your stored objects in Mongo look like the following:
+
+```json
+[
+  {name: `Person1`, age: 38},
+  {name: `Person2`, age: 27},
+]
+```
+
+You would change the mapping to:
 
 ```jsx
 {this.state.items.map((item, i) => (<h1 key={i}>{item.your-field-name-here}</h1>))}
