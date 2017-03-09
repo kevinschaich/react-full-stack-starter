@@ -20,20 +20,22 @@ cd ..
 npm start
 ```
 
+Visit [http://localhost:3000](http://localhost:3000) in your browser to see the server running!
+
 # Example DB Connection with MongoDB
 
-Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). Run the following in the root directory of the repository:
+Make sure you have [MongoDB installed](https://docs.mongodb.com/manual/installation/). Run the following in the **root directory** of the repository:
 
 `npm install --save mongodb`
 
-In the top of `server.js`, add the following lines to import Mongo and set the database URI:
+In the top of `server.js`, add the following lines to import Mongo and set the database URI. Be sure to replace `database-name-here` with the name of your database in Mongo.
 
 ```javascript
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017/database-name-here';
 ```
 
-Near the bottom of `server.js`, modify the `/api` route to return data from your DB:
+Now, near the bottom of `server.js`, update the `app.get('/api'...)` route to retrieve data from your DB. Be sure to replace `collection-name-here` with the name of your collection in Mongo.
 
 ```javascript
 app.get('/api', (req, res) => {
@@ -51,9 +53,9 @@ app.get('/api', (req, res) => {
 });
 ```
 
-Now, your server should be pulling in items from the database when it receives a call to `/api`. Now, in `client/src/App.js`, you need to update your `render` method to match the format of objects in MongoDB.
+Your server should be pulling items from the database when it receives a call to `/api`. You can test this by visiting [http://localhost:3001/api](http://localhost:3001/api) and see if the response is displayed properly.
 
-For example, if your stored objects in Mongo look like the following:
+Back on the client side, in `client/src/App.js`, you need to update your `render` method to match the format of objects in MongoDB. For example, if your stored objects in Mongo look like the following:
 
 ```json
 [
