@@ -8,7 +8,7 @@ Loosely Based on [Fullstack React's demo](https://github.com/fullstackreact/food
 
 # Installation/Usage
 
-**Note for Windows Users:** I recommend giving CMDer a try. It's a terminal emulator for Windows that alleviates many of the pain points of using `npm` and `git`.
+**Note for Windows Users:** I recommend giving [CMDer](http://cmder.net/) a try. It's a terminal emulator for Windows that alleviates many of the pain points of using `npm` and `git`.
 
 Run the following in your terminal:
 
