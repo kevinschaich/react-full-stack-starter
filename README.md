@@ -89,6 +89,27 @@ You could change the mapping to populate the `name` field of each item on the pa
 
 Run the server using `npm start` -- you should see items from your DB being populated on the page!
 
+
+# Deploying to Heroku
+**Install the Heroku CLI and set up your account if you haven't already.**  
+[Follow the instructions here.](https://devcenter.heroku.com/articles/heroku-cli)  
+
+**Run the following in your terminal**
+```
+# cd into client folder and run the build script
+cd client
+npm run build
+cd ..
+
+# commit the changes to git
+git add .
+git commit -m "build for deployment"
+
+# create the heroku app and deploy
+heroku create
+git push heroku master
+```
+
 # Contributing/Pull Requests
 
 Please feel free to submit issues/pull requests! I welcome any corrections or suggestions that could make the repository better for others to use and build off of as well.
