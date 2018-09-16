@@ -6,7 +6,7 @@ Fully-updated for ES6 syntax.
 
 Loosely Based on [Fullstack React's demo](https://github.com/fullstackreact/food-lookup-demo), just leaned-out. Check out their [blog post](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/) for details on how the proxy setup allows a concurrent client/server side.
 
-# Installation/Usage
+## Installation/Usage
 
 **Run the following in your terminal:**
 
@@ -26,7 +26,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to see the 
 
 **Note for Windows Users:** If you encounter errors during installation, I recommend giving [CMDer](http://cmder.net/) a try.
 
-# Example DB Connection with MongoDB
+## Example DB Connection with MongoDB
 
 #### Install MongoDB
 
@@ -90,7 +90,7 @@ You could change the mapping to populate the `name` field of each item on the pa
 Run the server using `npm start` -- you should see items from your DB being populated on the page!
 
 
-# Deploying to Heroku
+## Deploying to Heroku
 **Install the Heroku CLI and set up your account if you haven't already.**  
 [Follow the instructions here.](https://devcenter.heroku.com/articles/heroku-cli)  
 
@@ -110,6 +110,11 @@ heroku create
 git push heroku master
 ```
 
-# Contributing/Pull Requests
+## Contributing/Pull Requests
 
 Please feel free to submit issues/pull requests! I welcome any corrections or suggestions that could make the repository better for others to use and build off of as well.
+
+## License
+
+MIT © [Kevin Schaich](https://kevinschaich.io)
+
